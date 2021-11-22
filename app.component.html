@@ -1,0 +1,11 @@
+<app-header></app-header>
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile 
+  *ngfor "let data of element; let index = index;"
+  [rowspan]="data.rows" 
+  [colspan]="data.cols" 
+  style="background-color: aqua;">
+  <img src="https://picsum.photos/200/{{300 + index}}" style="object-fit: cover; width: 100%; height: 100%;">
+</mat-grid-tile>
+</mat-grid-list>
+<app-header></app-header>
